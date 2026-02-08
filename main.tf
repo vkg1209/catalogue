@@ -58,9 +58,6 @@ resource "aws_ami_from_instance" "catalogue" {
   )
 }
 
-resource "aws_lb_target_group" "catalogue" {
-  
-}
 
 resource "aws_lb_target_group" "catalogue" {
   name     = "${local.common_suffix_name}-catalogue"
